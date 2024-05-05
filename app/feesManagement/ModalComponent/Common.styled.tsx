@@ -38,3 +38,16 @@ export const TwoInputContainer = styled.div`
   width: 100% !important;
   color: "black" !important;
 `;
+
+export const FormButton = styled.div`
+  width: 100%;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+`;
+
+export const ScrollableFormContainer = styled.div`
+  width: 100%;
+  flex-grow: 1; /* Takes up all available space between header and footer */
+  overflow-y: auto; /* Enables vertical scrolling */
+`;
