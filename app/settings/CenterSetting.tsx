@@ -612,7 +612,7 @@ const CenterSetting = () => {
               state={isChecked}
               error={error}
               setError={setError}
-              disable={disable}
+              // disable={disable}
             />
           </div>
 

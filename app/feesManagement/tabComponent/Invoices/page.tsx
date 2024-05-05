@@ -335,28 +335,28 @@ export default function Invoices() {
   };
 
   const getenrolledChildlist = async () => {
-    try {
-      let result = await childEnrollmetnList();
+    // try {
+    //   let result = await childEnrollmetnList();
 
-      if (result.success) {
-        let resultarrnew = result.data.map((item: any) => {
-          return {
-            value: item?.id,
-            label: item?.child?.name,
-          };
-        });
+    //   if (result.success) {
+    //     let resultarrnew = result.data.map((item: any) => {
+    //       return {
+    //         value: item?.id,
+    //         label: item?.child?.name,
+    //       };
+    //     });
 
-        setChildEnrollData([
-          { value: "", label: "Select child" },
-          ...resultarrnew,
-        ]);
-      }
-    } catch (err: any) {
-      if (err.response && err.response.status === 401) {
-        handleUnauthorizedError(router);
-      }
-      toast.error(err?.response?.data.message);
-    }
+    //     setChildEnrollData([
+    //       { value: "", label: "Select child" },
+    //       ...resultarrnew,
+    //     ]);
+    //   }
+    // } catch (err: any) {
+    //   if (err.response && err.response.status === 401) {
+    //     handleUnauthorizedError(router);
+    //   }
+    //   toast.error(err?.response?.data.message);
+    // }
   };
   const getSubsidyListData = async () => {
     try {
