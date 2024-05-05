@@ -90,11 +90,11 @@ const ChildManagementCard = () => {
   const enrolledChildlistlist = async () => {
     let res;
     try {
-      res = await childEnrollmetnList();
-      if (res?.success) {
-        // console.log(res?.data)
-        setChildEnrollData(res?.data);
-      }
+      // res = await childEnrollmetnList();
+      // if (res?.success) {
+      //   // console.log(res?.data)
+      //   setChildEnrollData(res?.data);
+      // }
       // console.log(res);
     } catch (error) { }
   };
