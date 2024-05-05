@@ -66,20 +66,20 @@ const AddIndividualPlan: React.FC<any> = ({ control, cancelText, AddText, closeM
   const enrolledChildlistlist = async () => {
     let res;
     try {
-      res = await childEnrollmetnList();
-      if (res?.success) {
-        console.log(res?.data)
-        const newArray = res?.data?.map((item: any, index: number) => ({
-          label: item.child?.name,
-          value: item.child_id,
-        }));
-        const newArrayWithSelect = [
-          { value: "", label: "Select classroom" },
-          ...newArray,
-        ];
+      // res = await childEnrollmetnList();
+      // if (res?.success) {
+      //   console.log(res?.data)
+      //   const newArray = res?.data?.map((item: any, index: number) => ({
+      //     label: item.child?.name,
+      //     value: item.child_id,
+      //   }));
+      //   const newArrayWithSelect = [
+      //     { value: "", label: "Select classroom" },
+      //     ...newArray,
+      //   ];
 
-        setChildData(newArrayWithSelect);
-      }
+      //   setChildData(newArrayWithSelect);
+      // }
       // console.log(res);
     } catch (error) { }
   };
